@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .dashboard {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: auto;
+            width: fit-content;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        .dashboard p, .dashboard ul {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .dashboard ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dashboard ul li {
+            margin: 10px 0;
+        }
+
+        .dashboard ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+        }
+
+        .dashboard ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .dashboard form {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="dashboard">
+    <h1>Welcome, Student!</h1>
+    <p>Choose an option:</p>
+    <ul>
+        <li><a href="/grades/all">Show all my grades</a></li>
+        <li><a href="/grades/course">Show average, lowest, and highest grade in a course</a></li>
+    </ul>
+    <!-- Logout Button -->
+    <form action="/logout" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</div>
+</body>
+</html>
